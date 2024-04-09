@@ -214,13 +214,32 @@
     margin-left: auto;
 }
 
-.movie-card :is(.duration, .rating) {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.duration,
+.rating {
     color: var(--gainsboro);
-    font-size: 12px;
-    font-weight: 500;
+}
+
+.duration {
+    margin-right: 20px;
+    position: relative;
+}
+
+.rating {
+    position: relative;
+}
+
+.rating-icon {
+    width: 14px;
+    position: absolute;
+    left: -18px;
+    top: 1.7px;
+}
+
+.time-icon {
+    width: 14px;
+    position: absolute;
+    left: -18px;
+    top: 2.2px;
 }
 
 .movie-card .card-banner img {

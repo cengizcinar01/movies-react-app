@@ -4,6 +4,8 @@ import heartOutline from '../assets/svg/heart-outline.svg';
 import heartFilled from '../assets/svg/heart-filled.svg';
 import svgCelebrate from '../assets/svg/celebrate.svg';
 import trashIcon from '../assets/svg/trash-icon.svg';
+import rating from '../assets/svg/rating.svg';
+import time from '../assets/svg/time.svg';
 
 import img1 from '../assets/movie-1.png';
 import img2 from '../assets/movie-2.png';
@@ -58,9 +60,11 @@ export default function Movie({ movies, toggleFavorite }) {
                             <div className="card-meta">
                                 <div className="badge badge-outline">{movie.resolution}</div>
                                 <div className="duration">
-                                    <span>{movie.duration} min</span>
+                                    <img className="time-icon" src={time} alt="" />
+                                    <span className="duration-text">{movie.duration} min</span>
                                 </div>
                                 <div className="rating">
+                                    <img className="rating-icon" src={rating} alt="" />
                                     <time>{movie.rating}</time>
                                 </div>
                             </div>
